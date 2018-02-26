@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/current_question"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Question"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
+
+            <Button
+                android:layout_width="150dp"
+                android:textAlignment="center"
+                android:layout_height="150dp"
+                android:id="@+id/choice_one"
+                android:text="choice one"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@android:color/background_light"
+                android:layout_below="@id/current_question"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:id="@+id/choice_two"
+                android:textAlignment="center"
+                android:layout_height="150dp"
+                android:layout_toRightOf="@id/choice_one"
+                android:text="choice two"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@android:color/background_light"
+                android:layout_below="@id/current_question"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:id="@+id/choice_three"
+                android:textAlignment="center"
+                android:layout_height="150dp"
+                android:text="choice three"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@android:color/background_light"
+                android:layout_below="@id/choice_one"/>
+
+            <Button
+                android:id="@+id/choice_four"
+                android:layout_width="150dp"
+                android:textAlignment="center"
+                android:layout_height="150dp"
+                android:text="choice four"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@android:color/background_light"
+                android:layout_below="@id/current_question"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="150dp"
+               />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorAccent">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_marginTop="100dp"
+          android:layout_height="100dp"
+          android:text="Ideal Valentine's Date Quiz"
+          android:textAlignment="center"
+          android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+          android:textColor="@android:color/background_light"
+          android:textSize="36sp"
+          android:id="@+id/title_app"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:id="@+id/start_button"
+          android:layout_height="50dp"
+          android:layout_marginTop="25dp"
+          android:layout_below="@+id/title_app"
+          android:textColor="@android:color/background_light"
+          android:text="Begin"
+          android:backgroundTint="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+
+  </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
